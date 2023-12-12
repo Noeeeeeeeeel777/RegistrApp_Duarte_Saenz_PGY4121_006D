@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button (click)="MostrarMenu()" color="warning">
+        <ion-icon slot="icon-only" name="menu-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>
+      Actualizar Docente
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" style="display: flex; flex-direction: column; align-items: center;">
+  <ion-header collapse="condense">
+  </ion-header>
+
+  <form>
+
+    <ion-item>
+      <ion-label position="floating">Correo: </ion-label>
+      <ion-input type="text" name="txtEmail" [(ngModel)]="usuario.correo" disabled></ion-input>
+    </ion-item>
+    
+    <ion-item >
+      <ion-label>Nombre de usuario: </ion-label>
+      <ion-input type="text" name="txtUsername" [(ngModel)]="usuario.username"></ion-input>
+    </ion-item> 
+
+    <ion-item >
+      <ion-label>Asignatura 1: </ion-label>
+      <ion-input type="text" name="txtAsignatura1" [(ngModel)]="usuario.asignatura1"></ion-input>
+    </ion-item> 
+
+    <ion-item >
+      <ion-label>Asignatura 2: </ion-label>
+      <ion-input type="text" name="txtAsignatura2" [(ngModel)]="usuario.asignatura2"></ion-input>
+    </ion-item>
+
+    <ion-item >
+      <ion-label>Jornada </ion-label>
+      <ion-input type="text" name="txtJornada" [(ngModel)]="usuario.jornada"></ion-input>
+    </ion-item>  
+
+    <ion-row>
+      <ion-col>
+        <ion-button (click)="ActualizarUsuario()">Actualizar Usuario</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+
+</ion-content>

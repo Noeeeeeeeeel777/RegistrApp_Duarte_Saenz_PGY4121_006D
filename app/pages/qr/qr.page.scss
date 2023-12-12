@@ -1,0 +1,49 @@
+body{
+    --ion-background-color: #E0B0FF !important;
+}
+  
+.ion-padding {
+    padding: 20px;
+  }
+  
+  /* Estilos para el título del encabezado */
+  .header-title {
+    font-size: 18px;
+  }
+  
+  /* Estilos para el saludo */
+  .greeting {
+    text-align: center;
+    color: #007bff; /* Azul predeterminado */
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para la etiqueta del campo de entrada */
+  .input-label {
+    font-weight: bold;
+  }
+  
+  /* Estilos para el campo de entrada */
+  .section-input ion-input {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  /* Estilos para la tarjeta del QR */
+  .qr-card {
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos para el botón */
+  .generate-button {
+    margin-top: 20px;
+    background-color: #28a745; /* Verde */
+    color: #fff;
+    font-weight: bold;
+    border-radius: 25px;
+  }

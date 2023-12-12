@@ -1,0 +1,41 @@
+<body>
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-button (click)="MostrarMenu()" color="warning">
+          <ion-icon slot="icon-only" name="menu-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-title>
+        SOLO PARA TI
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+  <ion-list lines="full">
+    <p class="descripcion-libreria">
+      Bienvenido a nuestra librería virtual, donde encontrarás una amplia selección de libros 
+      en línea para disfrutar. Explora nuestra colección y descubre tus próximas lecturas favoritas.
+    </p>
+    <ion-item *ngFor="let li of libros">
+      <ion-label class="ion-text-wrap">
+        <img [src]="li.imagen" alt="Portada del libro" class="book-cover">
+        <h2 class="book-title">{{ li.titulo }}</h2>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+        <ion-button (click)="abrirModal(li)" expand="" color="secondary" shape="round" fill="solid" class="ion-text-center" class="ion-padding">
+          Revisa Aqui
+        </ion-button>
+      </div>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-footer  fixed="true" >
+    <ion-toolbar style="color: #fe5489;">
+      <a href="https://www.facebook.com/"><ion-icon name="logo-facebook" class="icon-container"></ion-icon></a>
+      <a href="https://www.instagram.com/"><ion-icon name="logo-instagram" class="icon-container"></ion-icon></a>
+      <a href="https://www.tiktok.com/"><ion-icon name="logo-tiktok" class="icon-container"></ion-icon></a>
+    </ion-toolbar>
+  </ion-footer>
+</ion-content>
+</body>

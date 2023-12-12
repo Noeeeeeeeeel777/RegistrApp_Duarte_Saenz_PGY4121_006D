@@ -1,0 +1,142 @@
+{
+  "usuario": [
+    {
+      "id": 1,
+      "username": "ProfeVivi",
+      "rut": "16789569-7",
+      "correo": "v.sol@gmail.com",
+      "password": "vivi1234",
+      "role": "docente",
+      "jornada": "diurno",
+      "asignatura1": "Programación web",
+      "asignatura2": "Inglés",
+      "anioAcademico1": 2023,
+      "semestre1": "1",
+      "horasSemanales1": 5,
+      "anioAcademico2": 2023,
+      "semestre2": "2",
+      "horasSemanales2": 4
+    },
+    {
+      "username": "JazDuarte",
+      "rut": "20966340-6",
+      "correo": "jaz.duarte@gmail.com",
+      "password": "duarte123",
+      "role": "estudiante",
+      "jornada": "Vespertino",
+      "asignatura1": "Matemáticas",
+      "asignatura2": "Inglés",
+      "anioAcademico1": 2023,
+      "semestre1": "2",
+      "horasSemanales1": 5,
+      "anioAcademico2": 2023,
+      "semestre2": "2",
+      "horasSemanales2": 6,
+      "id": 2
+    }
+  ],
+  "libros": [
+    {
+      "id": 1,
+      "titulo": "Tokyo Blues",
+      "autor": "Haruki Murakami",
+      "anio": 1987,
+      "descripcion": "Tokyo Blues, también conocido como Norwegian Wood, es una novela escrita por el renombrado autor japonés Haruki Murakami. Publicada en 1987, la historia se desarrolla en Tokio a fines de la década de 1960 y sigue a Toru Watanabe, un estudiante universitario, mientras navega por la complejidad de las relaciones humanas y el duelo después de la muerte de un amigo cercano. La novela aborda temas de amor, soledad, pérdida y la búsqueda de identidad en un mundo en constante cambio. Tokyo Blues es conocido por su estilo lírico y reflexivo, que ha ganado elogios tanto en Japón como en el ámbito internacional.",
+      "imagen": "assets/portadaLibro.jpg"
+    },
+    {
+      "id": 2,
+      "titulo": "El extranjero",
+      "autor": "Albert Camus",
+      "anio": 1942,
+      "descripcion": "Originalmente titulado L'Étranger en francés, es una novela escrita por el autor argelino-francés Albert Camus y publicada en 1942. La historia sigue a Meursault, un protagonista apático y aparentemente indiferente, mientras narra su vida en la Argelia colonial y los eventos que lo llevan a cometer un acto de violencia inesperado. La novela examina temas existenciales y filosóficos, como la alienación, la absurdez de la vida y la indiferencia ante la moral convencional. El Extranjero es una obra clave del existencialismo y el absurdo, y ha influido en la literatura y la filosofía contemporáneas.",
+      "imagen": "assets/portadaLibro2.jpg"
+    },
+    {
+      "id": 3,
+      "titulo": "Matar un ruiseñor",
+      "autor": "Harper Lee",
+      "anio": 1960,
+      "descripcion": "Matar un ruiseñor es una novela escrita por Harper Lee y publicada en 1960. La historia está ambientada en la década de 1930 en una pequeña ciudad del sur de Estados Unidos y está narrada por Scout Finch, una niña que relata los eventos que rodean a su padre, Atticus Finch, un abogado que defiende a un hombre negro acusado de violar a una mujer blanca. La novela explora temas de raza, prejuicio, justicia y moralidad en un contexto de segregación racial. A través de la historia, los personajes y la narración en primera persona de Scout, Matar un ruiseñor ofrece una poderosa crítica social y una profunda reflexión sobre la intolerancia y la empatía. La novela se ha convertido en un clásico de la literatura estadounidense y ha sido apreciada por su exploración de temas sociales y su impacto duradero en la conciencia cultural.",
+      "imagen": "assets/portadaLibro3.jpg"
+    },
+    {
+      "id": 4,
+      "titulo": "Cien años de soledad",
+      "autor": "Gabriel García Márquez",
+      "anio": 1967,
+      "descripcion": "Cien años de soledad es una novela escrita por el autor colombiano Gabriel García Márquez, publicada en 1967. La historia se desarrolla en el ficticio pueblo de Macondo y sigue a lo largo de varias generaciones a la familia Buendía, destacando los aspectos mágicos y realistas de sus vidas. La novela es una exploración profunda de la soledad, la pasión, el tiempo y la historia de América Latina. Combina elementos de realismo mágico con una narrativa única y a menudo surrealista. La historia de los Buendía refleja la historia de la región y abarca temas como el amor, la guerra, la política y el destino. Cien años de soledad es ampliamente considerada como una obra maestra de la literatura en español y ha influido en generaciones de escritores. Es un viaje literario que mezcla la realidad y la fantasía, tejiendo una narrativa rica y compleja a lo largo de una línea de tiempo no lineal.",
+      "imagen": "assets/portadaLibro4.jpg"
+    },
+    {
+      "id": 5,
+      "titulo": "Flores en el ático",
+      "autor": "V.C. Andrews",
+      "anio": 1979,
+      "descripcion": "Flores en el ático es una novela escrita por V.C. Andrews y publicada en 1979. La historia sigue a cuatro hermanos, Cathy, Chris, Cory y Carrie, quienes son encerrados en un ático por su madre después de la muerte de su padre. Los niños son sometidos a abusos y negligencia mientras luchan por sobrevivir en aislamiento.La novela explora temas de abuso, traición, incesto y supervivencia en un entorno familiar tóxico. Flores en el ático es una obra controvertida que ha intrigado a los lectores durante décadas debido a su naturaleza oscura y perturbadora. Es importante tener en cuenta que esta novela es conocida por su contenido fuerte y puede no ser adecuada para todos los lectores debido a su temática impactante.",
+      "imagen": "assets/portadaLibro5.jpg"
+    },
+    {
+      "id": 6,
+      "titulo": "Azul casi Transparente",
+      "autor": "Ryu Murakami",
+      "anio": 1976,
+      "descripcion": "Azul casi transparente es una novela escrita por el autor japonés Ryu Murakami, publicada en 1976. La historia se desarrolla en Tokio y sigue a un grupo de jóvenes adultos que se ven atrapados en una espiral de autodestrucción mientras luchan por encontrar su identidad en la ciudad posmoderna. La novela aborda temas de alienación, nihilismo y la búsqueda de significado en un mundo urbano desencantado. A través de personajes complejos y situaciones provocadoras, Murakami explora la vida nocturna, las relaciones y las experiencias límite de sus protagonistas. Azul casi transparente es conocida por su estilo crudo y provocativo, así como por su representación de la alienación y la desesperación en la sociedad contemporánea. La obra es un retrato impactante de la juventud urbana en Japón y ha ganado reconocimiento en la literatura japonesa contemporánea.",
+      "imagen": "assets/portadaLibro6.jpg"
+    },
+    {
+      "id": 7,
+      "titulo": "Lolita",
+      "autor": "Vladimir Nabokov",
+      "anio": 1955,
+      "descripcion": "Lolita es una novela escrita por el autor ruso Vladimir Nabokov y publicada en 1955. La historia está narrada por Humbert Humbert, un erudito europeo que se obsesiona con una joven llamada Dolores Haze, a quien apoda Lolita. Humbert narra su obsesión y su relación con Lolita mientras viajan por Estados Unidos. La novela es conocida por su controvertida temática, ya que aborda la pedofilia y la obsesión sexual, y está escrita en forma de monólogo. A través de la voz de Humbert, Nabokov explora temas de moralidad, pasión y la construcción de la realidad. Lolita es una obra literaria aclamada que ha generado debates y controversia debido a su contenido provocativo y su estilo literario sofisticado. La novela es considerada una obra maestra de la literatura del siglo XX, pero también ha sido objeto de críticas y censura en algunos lugares debido a su temática polémica.",
+      "imagen": "assets/portadaLibro7.jpg"
+    },
+    {
+      "id": 8,
+      "titulo": "The Secret History",
+      "autor": "Donna Tartt",
+      "anio": 1992,
+      "descripcion": "The Secret History fue escrito por Donna Tartt y publicado en 1992. La novela es una obra de ficción que combina elementos de la novela de campus y el misterio. Está ambientada en una prestigiosa universidad en Nueva Inglaterra y sigue a un grupo de estudiantes de alto rendimiento que se ven envueltos en un oscuro y perturbador secreto. La historia gira en torno a temas de amor, traición y la búsqueda de la verdad, y explora las consecuencias de las acciones de los personajes. The Secret History es conocido por su narrativa envolvente y su estilo literario cuidadoso, y ha sido elogiado por críticos y lectores por su intriga y complejidad.",
+      "imagen": "assets/portadaLibro8.jpg"
+    }
+  ],
+  "asistencias": [
+    {
+      "id": "",
+      "username": "",
+      "hora": "",
+      "seccion": ""
+    },
+    {
+      "username": "VivitaSol",
+      "hora": "Fecha del día: \"21/11/2023\" ",
+      "seccion": "PGY4121",
+      "id": "Z96B7Kw"
+    },
+    {
+      "username": "VivitaSol",
+      "hora": "Fecha del día: \"22/11/2023\" ",
+      "seccion": "CSY4111",
+      "id": "bON08kT"
+    },
+    {
+      "username": "ProfeVivi",
+      "hora": "Fecha del día: \"12/12/2023\" ",
+      "seccion": "MAT2120",
+      "id": "qxUr_r-"
+    },
+    {
+      "username": "ProfeVivi",
+      "hora": "Fecha del día: \"12/12/2023\" ",
+      "seccion": "PLG4520",
+      "id": "bhrjTkL"
+    },
+    {
+      "username": "ProfeVivi",
+      "hora": "Fecha del día: \"12/12/2023\" ",
+      "seccion": "004D",
+      "id": "COVXfMj"
+    }
+  ]
+}

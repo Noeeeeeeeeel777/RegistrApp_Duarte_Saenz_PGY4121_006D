@@ -1,0 +1,61 @@
+ion-title {
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif; /* Cambia la fuente */
+  }
+  
+  /* Estilos para el botón de Cerrar */
+  ion-button {
+    color: #ff6f61; /* Cambiar el color del botón a un tono de rosa */
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif; /* Cambia la fuente */
+  }
+  
+  /* Estilos para el contenedor principal */
+  ion-content {
+    background-color: #f2f0e6; /* Cambiar el color de fondo a un tono de beige */
+    padding: 20px;
+    font-family: 'Arial', sans-serif; /* Cambia la fuente */
+  }
+  
+  /* Estilos para la tarjeta que contiene la información del libro */
+  ion-card {
+    border: 1px solid #d3d3d3; /* Cambiar el color del borde a un tono de gris */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agregar una sombra */
+  }
+  
+  /* Estilos para la lista de detalles */
+  ion-list {
+    background-color: #f7f7f7; /* Cambiar el color de fondo de la lista */
+    border: none; /* Eliminar el borde de la lista */
+  }
+  
+  /* Estilos para los elementos de lista (Año y Autor) */
+  ion-item {
+    border: none; /* Eliminar el borde de los elementos de lista */
+    font-family: 'Arial', sans-serif; /* Cambia la fuente */
+  }
+  
+  ion-label {
+    font-weight: bold;
+    color: #66a182; /* Cambiar el color de etiquetas a un tono de verde */
+    font-family: 'Arial', sans-serif; /* Cambia la fuente */
+  }
+  
+  ion-text {
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'Arial', sans-serif; /* Cambia la fuente */
+    color: #333; /* Cambiar el color del texto a un tono de gris oscuro */
+  }
+  
+  /* Estilos para el título de la descripción */
+  ion-item-divider {
+    background-color: #ffcb77; /* Cambiar el color de fondo del título a un tono de amarillo */
+    font-weight: bold;
+    color: #333; /* Cambiar el color del texto a un tono de gris oscuro */
+    font-family: 'Arial', sans-serif; /* Cambia la fuente */
+  }

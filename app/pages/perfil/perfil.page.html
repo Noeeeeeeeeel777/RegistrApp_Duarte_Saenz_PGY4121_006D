@@ -1,0 +1,56 @@
+<body>
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-button (click)="MostrarMenu()" color="warning">
+          <ion-icon slot="icon-only" name="menu-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-title>
+        PERFIL ACADÉMICO
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content [fullscreen]="true">
+    <ion-header collapse="condense">
+      <ion-toolbar>
+        <ion-title size="large">Perfil</ion-title>
+      </ion-toolbar>
+    </ion-header>
+  
+    <ion-list lines="full">
+      <ion-item>
+        <ion-label position="stacked">Nombre de Usuario</ion-label>
+        <ion-text>{{ user.username }}</ion-text>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label position="stacked">RUT</ion-label>
+        <ion-text>{{ user.rut }}</ion-text>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label position="stacked">Correo</ion-label>
+        <ion-text>{{ user.correo }}</ion-text>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label position="stacked">Rol</ion-label>
+        <ion-text>{{ user.role }}</ion-text>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label position="stacked">Asignatura 1</ion-label>
+        <ion-text>{{ user.asignatura1 }}</ion-text>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label position="stacked">Asignatura 2</ion-label>
+        <ion-text>{{ user.asignatura2 }}</ion-text>
+      </ion-item>
+    </ion-list>
+    <ion-button style="margin: 15px"[routerLink]="['/actualizar', user.id]"color="warning"> 
+      <ion-icon name="create"></ion-icon> </ion-button>
+  </ion-content>
+</body>

@@ -1,0 +1,166 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/login" color="warning"></ion-back-button>
+    </ion-buttons>
+    <ion-title>REGISTRARSE</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" style="height: 90%;">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Ingresa tus datos</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <form [formGroup]="formularioRegistro" >
+        <ion-list>
+         <ion-item>
+          <ion-label position="floating">Nombre y Apellido</ion-label>
+          <ion-input formControlName="username" type="text"></ion-input>
+        </ion-item>
+        <div
+          *ngIf="formularioRegistro?.get('username')?.hasError('required') && formularioRegistro?.get('username')?.touched">
+          Nombre y apellido son obligatorios.
+        </div>
+        <div *ngIf="formularioRegistro?.get('username')?.hasError('minlength')">
+          Nombre debe tener al menos 8 carácteres.
+        </div>
+
+        <ion-item>
+          <ion-label position="floating">Rut</ion-label>
+          <ion-input formControlName="rut" type="text"></ion-input>
+        </ion-item>
+        <div *ngIf="formularioRegistro?.get('rut')?.hasError('required') && formularioRegistro?.get('rut')?.touched">
+          Rut es obligatorio.
+        </div>
+        <div *ngIf="formularioRegistro?.get('rut')?.hasError('minlength')">
+          Rut debe tener al menos 10 caracteres.
+        </div>
+      </ion-list>
+      <ion-list>        
+        <ion-item>
+          <ion-label position="floating">Correo</ion-label>
+          <ion-input formControlName="correo" type="email"></ion-input>
+        </ion-item>
+        <div
+          *ngIf="formularioRegistro?.get('correo')?.hasError('required') && formularioRegistro?.get('correo')?.touched">
+          Correo es obligatorio.
+        </div>
+        <div *ngIf="formularioRegistro?.get('correo')?.hasError('email') && formularioRegistro?.get('correo')?.touched">
+          Correo no es válido.
+        </div>
+
+        <ion-item>
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input formControlName="password" type="password"></ion-input>
+        </ion-item>
+        <div
+          *ngIf="formularioRegistro?.get('password')?.hasError('required') && formularioRegistro?.get('password')?.touched">
+          Contraseña es obligatoria.
+        </div>
+        <div *ngIf="formularioRegistro?.get('password')?.hasError('minlength')">
+          Contraseña debe tener al menos 8 caracteres.
+        </div>
+      </ion-list>
+
+      <ion-item>
+        <ion-label position="stacked">Rol a cargo:</ion-label>
+        <ion-select formControlName="role">
+          <ion-select-option value="docente">Docente</ion-select-option>
+          <ion-select-option value="estudiante">Estudiante</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Tipo de jornada</ion-label>
+        <ion-input formControlName="jornada" type="text"></ion-input>
+      </ion-item>
+
+        <!-- Asignatura 1 -->
+        <ion-list>
+          <ion-item>
+            <ion-label position="floating">Asignatura 1</ion-label>
+            <ion-input formControlName="asignatura1" type="text"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Año Académico (4 dígitos)</ion-label>
+            <ion-input formControlName="anioAcademico1" type="number"></ion-input>
+          </ion-item>
+          <div
+            *ngIf="formularioRegistro?.get('anioAcademico1')?.hasError('required') && formularioRegistro?.get('anioAcademico1')?.touched">
+            Año Académico es obligatorio.
+          </div>
+          <div *ngIf="formularioRegistro?.get('anioAcademico1')?.hasError('pattern')">
+            Año Académico debe tener 4 dígitos.
+          </div>
+          <ion-item>
+            <ion-label position="stacked">Semestre</ion-label>
+            <ion-select formControlName="semestre1">
+              <ion-select-option value="1">Semestre 1</ion-select-option>
+              <ion-select-option value="2">Semestre 2</ion-select-option>
+            </ion-select>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Horas semanales (mínimo 5)</ion-label>
+            <ion-input formControlName="horasSemanales1" type="number"></ion-input>
+          </ion-item>
+          <div
+            *ngIf="formularioRegistro?.get('horasSemanales1')?.hasError('required') && formularioRegistro?.get('horasSemanales1')?.touched">
+            Horas semanales son obligatorias.
+          </div>
+          <div *ngIf="formularioRegistro?.get('horasSemanales1')?.hasError('min')">
+            Horas semanales deben ser de al menos 5 horas.
+          </div>
+        </ion-list>
+        <ion-list>
+          
+          <!-- Asignatura 2 -->
+          <ion-item>
+            <ion-label position="floating">Asignatura 2</ion-label>
+            <ion-input formControlName="asignatura2" type="text"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Año Académico (4 dígitos)</ion-label>
+            <ion-input formControlName="anioAcademico2" type="number"></ion-input>
+          </ion-item>
+          <div
+            *ngIf="formularioRegistro?.get('anioAcademico2')?.hasError('required') && formularioRegistro?.get('anioAcademico2')?.touched">
+            Año Académico es obligatorio.
+          </div>
+          <div *ngIf="formularioRegistro?.get('anioAcademico2')?.hasError('pattern')">
+            Año Académico debe tener 4 dígitos.
+          </div>
+          <ion-item>
+            <ion-label position="stacked">Semestre</ion-label>
+            <ion-select formControlName="semestre2">
+              <ion-select-option value="1">Semestre 1</ion-select-option>
+              <ion-select-option value="2">Semestre 2</ion-select-option>
+            </ion-select>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Horas semanales (mínimo 5)</ion-label>
+            <ion-input formControlName="horasSemanales2" type="number"></ion-input>
+          </ion-item>
+          <div
+            *ngIf="formularioRegistro?.get('horasSemanales2')?.hasError('required') && formularioRegistro?.get('horasSemanales2')?.touched">
+            Horas semanales son obligatorias.
+          </div>
+          <div *ngIf="formularioRegistro?.get('horasSemanales2')?.hasError('min')">
+            Horas semanales deben ser de al menos 5 horas.
+          </div>
+        </ion-list>
+        <div style="display: flex; flex-direction: row; justify-content: center; margin-bottom: 10px;">
+          <ion-button (click)="crearUsuario()" color="secondary" shape="round" fill="solid" class="ion-text-center">
+            REGISTRAR
+          </ion-button>
+        </div>
+        <br>
+      </form>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+
+

@@ -1,0 +1,85 @@
+body{
+    --ion-background-color: #eed6ff !important;
+}
+
+/* Estilos para el título de la página */
+ion-title {
+  font-size: 24px; /* Tamaño de fuente más grande */
+  color: #fcf9fa; /* Cambia el color del título */
+}
+  
+  /* Estilos para la lista de libros */
+  ion-list {
+    padding: 10px;
+  }
+  
+  /* Estilos para cada elemento de la lista */
+  ion-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para la imagen de portada del libro */
+  ion-thumbnail img {
+    max-width: 80px;
+    max-height: 120px;
+    border: 2px solid #333;
+  }
+  
+  book-cover {
+    width: 50%; /* Ancho completo para ocupar el espacio disponible */
+    height: auto; /* Altura automática para mantener la proporción */
+  }
+  
+  ion-label {
+    text-align: center; /* Centra el texto en la etiqueta */
+  }
+  
+  h2 {
+    font-size: 18px; /* Tamaño de fuente para el título */
+  }
+  
+  p {
+    font-size: 14px; /* Tamaño de fuente para el autor y el año de publicación */
+    color: #555; /* Color de texto personalizado */
+  }
+
+  ion-footer {
+    background-color: #fe5489;
+    color: #ffffff;
+    text-align: center;
+  }
+
+.descripcion-libreria {
+  font-size: 16px; /* Tamaño de fuente más grande para el texto de la descripción */
+  color: #333; /* Cambia el color del texto de la descripción */
+  margin: 20px 0; /* Agrega margen superior e inferior para espaciar el texto */
+}
+
+  .custom-small-button {
+    background-color: #fe5489;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px; /* Tamaño de fuente */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 5px 10px; /* Espaciado interior reducido */
+    text-align: center;
+  }
+  
+  .custom-small-button:hover {
+    background-color: #ff3272;
+    color: #fff;
+  }
+
+  .icon-container {
+    font-size: 24px; /* Tamaño de fuente más grande para los íconos */
+    margin: 0 10px; /* Margen entre los íconos */
+  }
+
+  .book-title {
+    font-family: "TuFuentePersonalizada", sans-serif; /* Cambia "TuFuentePersonalizada" por la fuente que desees usar */
+    font-weight: bold; /* Texto en negrita */
+    font-size: 20px; /* Tamaño de fuente personalizado */
+    color: #000; /* Color de texto en negro */
+  }
